@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 5500;
+const colors = require('colors');
 
 app.get("/user", (req, res) => {
   return res.send({
@@ -11,5 +12,5 @@ app.get("/user", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running at port ${port}`);
+  console.log(`Server is running at port ${port}`.blue);
 });
