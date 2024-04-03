@@ -1,7 +1,7 @@
 # First Install Nodejs parent or base image.
 FROM node:latest
 # Install Nodemon
-RUN npm i -g nodemon
+#RUN npm i -g nodemon
 # Now write COPY <SOURCE: MEANS WHERE IS YOUR CODE . MEANS ROOT DIRECTORY> <DESTINATION: MEANS WHERE YOU WANT TO INSERT YOUR CODE IN YOUR IMAGE . MEANS IN ROOT DIRECTORY>
 COPY . .
 # Install all dependencies and node_modules
