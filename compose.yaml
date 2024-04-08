@@ -1,0 +1,7 @@
+# To run this file docker compose up
+services:
+  img:
+    build: .
+    container_name: basic_container
+    ports:
+      - 5500:5500
